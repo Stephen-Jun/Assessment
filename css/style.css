@@ -1,0 +1,190 @@
+body{
+	margin:  40px;
+}
+.parent-div {
+    background-image: url(file:///C:/Users/bstep/Desktop/web-app/images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+}
+.tagline, .form-container {
+    width: 100%;
+}
+.tagline .logo {
+    display: flex;
+    align-items: baseline;
+}
+.tagline h1 {
+    color: #85bf3a;
+    font-style: italic;
+}
+.tagline p, .tagline h1 {
+    font-family: system-ui;
+    margin: 0;
+}
+.tagline p {
+    font-size: 18px;
+}
+.inner-div {
+    width: 100%;
+}
+.tagline {
+	max-width: 900px;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+}
+.tagline-wrap {
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 20px 20px;
+}
+.tagline .logo img {
+    padding-bottom: 10px;
+}
+div#form1 {
+    flex-wrap: wrap;
+    width: 60%;
+    background: #ffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+     padding: 20px 30px;
+}
+div#form1 p, div#form1 form {
+    width: 100%;
+  	margin: 0;
+  	font-family: system-ui;
+}
+form.sample-form {
+    display: flex;
+    justify-content: space-evenly;   
+}
+form.sample-form input {
+    width: 30%;
+    padding: 5px 0;
+    margin-top: 20px;
+    border: 1px solid #b9b9b9;
+    border-radius: 5px;
+    height: 30px;
+}
+input#submit {
+    background: #85bf3a;
+    color: #fff;
+    text-transform: uppercase;
+    height: 40px;
+}
+form.sample-form input::placeholder {
+    padding: 0 10px;
+}
+.form-cont-inner {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+.text {
+    background: #85bf3a;
+    color: #fff;
+    font-family: system-ui;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    width: 30%;
+    background-size: cover;
+    padding: 20px 10px;
+}
+.text h1 {
+    font-weight: 500;
+    margin: 0;
+}
+.text p {
+    margin: 0;
+}
+.text:after {
+    content: '';
+    width: 30px;
+    height: 75px;
+    top: 0;
+    position: absolute;
+    transform: rotate(-20deg);
+    background: #85bf3a;
+    right: -15px;
+}
+.text:before {
+    content: '';
+    width: 30px;
+    height: 75px;
+    bottom: 0;
+    position: absolute;
+    background: #85bf3a;
+    right: -15px;
+    transform: rotate(20deg);
+}
+.form-container {
+    max-width: 1320px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+}
+div#form1 p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #6d6e70;
+}
+div#form1 p, div#form1 form {
+    width: 100%;
+    margin: 0;
+    font-family: system-ui;
+}
+div#form1 p span {
+    color: #85bf3a;
+}
+
+@media all and (max-width: 920px){
+	.text:before, .text:after {
+	    height: 92px;
+	}
+}
+@media all and (max-width: 768px){
+	form.sample-form {
+	    flex-direction: column;
+	}
+	form.sample-form input {
+	    width: 100%;
+	}
+	.form-cont-inner {
+	    flex-wrap: wrap;
+	    margin: 0 30px;
+	}
+	.text,  div#form1 {
+	    width: 100%;
+	}
+	.text:before, .text:after {
+	    display: none;
+	}
+	.form-container {
+	    position: unset;
+	}
+	.tagline {
+	    margin-bottom: 40px;
+	}
+}
+@media all and (max-width: 480px){
+	.tagline .logo {
+	    flex-direction: column;
+	}
+	.tagline .logo img {
+	    padding-bottom: 10px;
+	}
+	.text h1 {
+	    font-size: 28px;
+	}
+}
